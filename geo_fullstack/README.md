@@ -15,8 +15,8 @@ Geospatial fullstack (in my opinion) is all about creating functional, useful ge
 ## Task(s)
 
 1. Create a web application that ingests Open Street Map (OSM) data for the neighborhood in Tokyo (provided in this repo) and allow for user interactivity. The neighborhood is provided in the [tokyo.geojson](https://github.com/shaystrong/assessment/blob/main/geo_fullstack/tokyo.geojson) file in this repo. Perform the following actions:  
-  1. Query and download OSM data for the tokyo region. Save the data in a local or cloud database. If you can stream from OSM directly great! Avoid the use of static files (e.g. shapefiles, xls).
-  1. Enable a user to query your data interactively through a map by drawing a polygon. The output of the polygon should be the number of unique buildings. Report the number of buildings and the fraction of building area to landuse area in that user-queried polygon.
+   1. Query and download OSM data for the tokyo region. Save the data in a local or cloud database. If you can stream from OSM directly great! Avoid the use of static files (e.g. shapefiles, xls).
+   1. Enable a user to query your data interactively through a map by drawing a polygon. The output of the polygon should be the number of unique buildings. Report the number of buildings and the fraction of building area to landuse area in that user-queried polygon.
   
 1. Discuss or demonstrate how you would store the data in a persistent cloud environment. How frequently would you capture this information? What is required for storing this info for an entire country? What are the limitations or considerations?
 
