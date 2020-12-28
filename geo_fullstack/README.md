@@ -2,13 +2,14 @@
 
 ## Instructions
 
-Geospatial fullstack is all about creating functional, useful geospatial applications that leverage html/javascript on the frontend and can connect to geospatial databases and sources on the backend. Show us your creativitiy in the form of a functional web application.
+Geospatial fullstack (in my opinion) is all about creating functional, useful geospatial applications that leverage html/javascript on the frontend and can connect to geospatial databases and sources on the backend. Show us your creativity in the form of a functional web application.
 
-* Address all questions below
-* Your webapp should use Mapbox, Leaflet, Plotly, Google Earth Engine, or equivalent
+* Address all questions below.
+* Your webapp should use Mapbox, Leaflet, Plotly, Google Earth Engine, or equivalent.
 * Please clone this repo and address the required components below. 
 * To submit, please provide all links, script, and code in a google drive or dropbox link and email back to your HR contact email. 
 * Ensure the shared location is externally visible.
+* Do not spend more than a few hours on this task.
 
 
 ## Task(s)
