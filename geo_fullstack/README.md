@@ -20,6 +20,6 @@ Geospatial fullstack (in my opinion) is all about creating functional, useful ge
   
 1. Discuss or demonstrate how you would store the data in a persistent cloud environment. How frequently would you capture this information? What is required for storing this info for an entire country? What are the limitations or considerations?
 
-1. (Optional) Add additional functionality on the web app for charting or plotting useful or insightful information. Be creative.
+1. Add additional functionality on the web app for charting or plotting useful or insightful information. Be creative.
 
-1. (Optional) Add and additional data source that may be valuable for overlay as a vector layer. Why is it useful?
+1. (Optional) Add an additional data source that may be valuable for overlay as a vector layer. Why is it useful?
