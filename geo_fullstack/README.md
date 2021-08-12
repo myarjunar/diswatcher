@@ -9,7 +9,8 @@ Geospatial fullstack (in my opinion) is all about creating functional, useful ge
 * Please clone this repo and address the required components below. 
 * To submit, please provide all links, script, and code in a google drive or dropbox link and email back to your HR contact email. 
 * Ensure the shared location is externally visible.
-* Do not spend more than a few hours on this task.
+* Do not spend more than 3 hours on this task.
+* The app should be easy to run on a localhost or equivalent. Your reviewer of this task will be using OSX. 
 
 
 ## Task(s)
