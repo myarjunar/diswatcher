@@ -22,4 +22,4 @@ Geospatial fullstack (in my opinion) is all about creating functional, useful ge
 
 1. Add additional functionality on the web app for charting or plotting useful or insightful information. Be creative.
 
-1. (Optional) Add an additional data source that may be valuable for overlay as a vector layer. Why is it useful?
+1. Stream an additional data source that may be valuable for overlay as a vector or raster layer. Why is it useful?
