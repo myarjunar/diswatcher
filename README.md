@@ -1,2 +1,2 @@
-# assessment
-take-home assessments
+# OSMVIZ
+An application to visualize OSM data
