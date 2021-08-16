@@ -1,0 +1,11 @@
+{
+  "DATABASE": {
+    "host": "localhost",
+    "dockerhost": "host.docker.internal",
+    "port": 35432,
+    "user": "docker",
+    "password": "docker",
+    "database": "gis",
+    "driver": "postgres"
+  }
+}

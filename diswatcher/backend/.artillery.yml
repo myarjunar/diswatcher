@@ -1,0 +1,23 @@
+config:
+  target: 'http://localhost:8010'
+  phases:
+    - duration: 30
+      arrivalRate: 100
+scenarios:
+  - flow:
+    - post:
+        url: "/rides"
+        json:
+          start_lat: 10
+          start_long: 10
+          end_lat: 10
+          end_long: 10
+          rider_name: "yarjuna"
+          driver_name: "rohmat"
+          driver_vehicle: "car"
+  - flow:
+    - get:
+        url: "/rides"
+  - flow:
+    - get:
+        url: "/rides/123"

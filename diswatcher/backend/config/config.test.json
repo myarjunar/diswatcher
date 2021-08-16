@@ -1,0 +1,15 @@
+{
+  "DATABASE_SQLITE": {
+    "driver": "sqlite",
+    "storage": "/Users/myarjunar/dev/xenbatch/database/storage/test.sqlite"
+  },
+  "DATABASE": {
+    "host": "localhost",
+    "dockerhost": "host.docker.internal",
+    "port": 35432,
+    "user": "docker",
+    "password": "docker",
+    "database": "gis",
+    "driver": "postgres"
+  }  
+}

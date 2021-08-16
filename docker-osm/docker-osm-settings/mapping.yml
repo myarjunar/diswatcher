@@ -1,0 +1,166 @@
+areas:
+  area_tags: [building, landuse, leisure, natural, aeroway]
+tables:
+  buildings:
+    columns:
+      - name: osm_id
+        type: id
+      - name: geometry
+        type: geometry
+      - key: name
+        name: name
+        type: string
+      - name: type
+        type: mapping_value
+      - name: area
+        type: webmerc_area
+    mapping:
+      building:
+        - __any__
+    type: polygon
+  admin:
+    columns:
+      - name: osm_id
+        type: id
+      - name: geometry
+        type: geometry
+      - key: name
+        name: name
+        type: string
+      - name: type
+        type: mapping_value
+      - key: admin_level
+        name: admin_level
+        type: integer
+      - name: area
+        type: webmerc_area
+    mapping:
+      boundary:
+        - administrative
+    type: polygon
+  landusages:
+    columns:
+      - name: osm_id
+        type: id
+      - name: geometry
+        type: geometry
+      - key: name
+        name: name
+        type: string
+      - name: type
+        type: mapping_value
+      - name: area
+        type: webmerc_area
+      - name: z_order
+        type: enumerate
+        args:
+          values:
+            - land
+            - heath
+            - railway
+            - industrial
+            - commercial
+            - retail
+            - residential
+            - quarry
+            - zoo
+            - vineyard
+            - orchard
+            - scrub
+            - hospital
+            - place_of_worship
+            - theatre
+            - cinema
+            - nature_reserve
+            - parking
+            - fuel
+            - baracks
+            - library
+            - college
+            - school
+            - university
+            - golf_course
+            - allotments
+            - common
+            - pitch
+            - sports_centre
+            - garden
+            - recreation_ground
+            - village_green
+            - wetland
+            - grass
+            - meadow
+            - wood
+            - farmland
+            - farm
+            - farmyard
+            - cemetery
+            - forest
+            - park
+            - playground
+            - footway
+            - pedestrian
+    mapping:
+      aeroway:
+        - runway
+        - taxiway
+      amenity:
+        - university
+        - school
+        - college
+        - library
+        - fuel
+        - parking
+        - cinema
+        - theatre
+        - place_of_worship
+        - hospital
+      barrier:
+        - hedge
+      highway:
+        - pedestrian
+        - footway
+      landuse:
+        - park
+        - forest
+        - residential
+        - retail
+        - commercial
+        - industrial
+        - railway
+        - cemetery
+        - grass
+        - farmyard
+        - farm
+        - farmland
+        - orchard
+        - vineyard
+        - wood
+        - meadow
+        - village_green
+        - recreation_ground
+        - allotments
+        - quarry
+      leisure:
+        - park
+        - garden
+        - playground
+        - golf_course
+        - sports_centre
+        - pitch
+        - stadium
+        - common
+        - nature_reserve
+      man_made:
+        - pier
+      military:
+        - barracks
+      natural:
+        - wood
+        - land
+        - scrub
+        - wetland
+        - heath
+      tourism:
+        - zoo
+    type: polygon

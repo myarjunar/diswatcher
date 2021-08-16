@@ -1,0 +1,96 @@
+{
+  "name": "diswatcher",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.x"
+  },
+  "description": "diswatcher backend services",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start:api": "node src/interfaces/api/index.js",
+    "test": "cross-env NODE_ENV=test mocha './tests/**/*.js' --timeout=15000 --exit",
+    "test:grep": "cross-env NODE_ENV=test mocha './tests/**/*.js' --exit --timeout=15000 --grep",
+    "test:coverage": "nyc --reporter=html --reporter=text npm run test",
+    "test:load": "forever start src/interfaces/api/index.js && artillery run .artillery.yml && forever stopall",
+    "lint": "eslint --ext .js ./",
+    "lint:fix": "eslint --ext .js ./ --fix"
+  },
+  "keywords": [
+    "Xendit"
+  ],
+  "author": "Bo",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "change-case": "^4.1.1",
+    "cors": "^2.8.4",
+    "cross-env": "^7.0.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.4",
+    "fast-xml-parser": "^3.19.0",
+    "he": "^1.2.0",
+    "helmet": "^4.2.0",
+    "lint-staged": "^10.2.11",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "nconf": "^0.11.0",
+    "node-cron": "^2.0.3",
+    "pg": "^7.12.1",
+    "require-dir": "^1.2.0",
+    "sequelize": "^5.16.0",
+    "sinon": "^9.2.1",
+    "sqlite": "^4.0.17",
+    "sqlite3": "^4.0.6",
+    "swagger-ui-express": "^4.1.5",
+    "winston": "^3.1.0",
+    "winston-transport": "^4.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/node": "^7.7.0",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.0",
+    "@babel/register": "^7.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-watch": "^4.0.2",
+    "husky": "^1.3.1",
+    "mocha": "^6.1.4",
+    "nyc": "^13.3.0",
+    "prettier": "^2.0.5",
+    "sequelize-cli": "^5.5.0",
+    "supertest": "^4.0.2"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "index.js",
+      "src/**/*.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm run test",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  }
+}

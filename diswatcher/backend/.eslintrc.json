@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "linebreak-style": 0,
+    "string": "as-needed",
+    "object": { "unnecessary": true },
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ]
+  }
+}

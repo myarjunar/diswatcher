@@ -1,0 +1,5 @@
+docker-osm/docker-osm-settings/settings/*.pbf
+docker-osm/docker-osm-settings/settings/*lock
+docker-osm/docker-osm-settings/settings/last.state.txt
+diswatcher/backend/node_modules
+diswatcher/frontend/node_modules
